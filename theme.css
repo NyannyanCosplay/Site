@@ -1,6 +1,6 @@
 @font-face {
   font-family: yaetfont;
-  src: url(file:///C|/Users/zeisz/Desktop/NNC%20website/fonts/yaetfont.ttf);
+  src: url(fonts/yaetfont.ttf);
 }
 body, html{
   height:100%;
@@ -20,15 +20,15 @@ body, html{
   background-attachment:fixed;
 }
 .pimg1{
-  background-image:url('file:///C|/Users/zeisz/Desktop/NNC website/content/img1.jpg');
+  background-image:url('content/img1.jpg');
   min-height:100%;
 }
 .pimg2{
-  background-image:url('file:///C|/Users/zeisz/Desktop/NNC website/content/img2.png');
+  background-image:url('content/img2.png');
   min-height:400px;
 }
 .pimg3{
-  background-image:url('file:///C|/Users/zeisz/Desktop/NNC website/content/img3.jpg');
+  background-image:url('content/img3.jpg');
   min-height:400px;
 }
 .section{
