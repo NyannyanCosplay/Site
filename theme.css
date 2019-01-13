@@ -71,11 +71,16 @@ body, html{
     background-attachment:scroll;
   }
 }
-img {
+.dramatext {
+  width: 1400px;
+}
+.dramaimg {
   float: right;
   margin-left: 20px;
   margin-top: -30px;
   box-shadow: 5px 5px 5px #23282d;
+  width: 300px;
+  height: 500px;
 }
 ul{
 	float: right;
