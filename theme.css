@@ -2,6 +2,10 @@
   font-family: yaetfont;
   src: url(fonts/yaetfont.ttf);
 }
+@font-face {
+  font-family: arial;
+  src: url(fonts/arial.ttf);
+}
 body, html{
   height:100%;
   margin:0;
@@ -9,11 +13,11 @@ body, html{
   font-weight:400;
   line-height:1.8em;
   color:#666;
-  font-family: yaetfont;
+  font-family: arial;
 }
-.pimg1, .pimg2, .pimg3{
+.pimg1, .pimg2, .pimg3, .pimg4{
   position:relative;
-  opacity:0.7;
+  opacity:0.70;
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
@@ -29,6 +33,10 @@ body, html{
 }
 .pimg3{
   background-image:url('content/img3.jpg');
+  min-height:400px;
+}
+.pimg4{
+  background-image:url('content/img4.png');
   min-height:400px;
 }
 .section{
@@ -64,26 +72,31 @@ body, html{
   color:#fff;
   padding:20px;
   border: 3px solid white;
+  font-family: yaetfont;
 }
 .ptext .border.trans{
   background-color:transparent;
 }
 @media(max-width:568px){
-  .pimg1, .pimg2, .pimg3{
+  .pimg1, .pimg2, .pimg3, .pimg4{
     background-attachment:scroll;
   }
+}
+img {
+  float: right;
+  margin-left: 20px;
+  margin-top: -30px;
+  box-shadow: 5px 5px 5px #23282d;
 }
 ul{
 	float: right;
 	list-style-type: none;
 	margin-top: 40px;
-	margin-right: 30px;	
+	margin-right: 30px;
 }
-
 ul li{
 	display: inline-block;
 }
-
 ul li a{
 	text-decoration: none;
 	color: #fff;
@@ -93,9 +106,7 @@ ul li a{
 	text-transform: uppercase;
 	font-size: 14px;
 }
-
 ul li a:hover{
 	background-color: #fff;
 	color: #000;
 }
-
