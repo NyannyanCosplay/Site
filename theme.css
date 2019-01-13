@@ -49,6 +49,17 @@ body, html{
   letter-spacing:8px;
   text-transform:uppercase;
 }
+
+.psubtext{
+  position:absolute;
+  top:65%;
+  width:100%;
+  text-align:center;
+  color: white;
+  font-size:20px;
+  letter-spacing:8px;
+  text-transform:uppercase;}
+
 .ptext .border{
   color:#fff;
   padding:20px;
