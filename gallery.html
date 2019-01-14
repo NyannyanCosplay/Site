@@ -1,14 +1,61 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  		<title>NyannyanCosplay</title>
-  	<link rel="stylesheet" href="theme.css">
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NyannyanCosplay - Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+ $("li").on('click', function() {
+   $("li.active2").removeClass('active2');
+   $(this).addClass('active2');
+   var boxToShow = $(this).attr('rel');
+   $('.active').show(0, showNextPanel)
+   function showNextPanel() {
+     $(this).removeClass('active');
+     $("#"+boxToShow).hide(0, function() {
+       $(this).addClass('active');
+     });
+   };
+ });
 
-	<body>
-		
-	</body>
+});
+</script>
+</head>
+<body>
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        NyanNyanCosplay💛Gallery
+      </span>
+    </div>
+    <div class="infobox">
+		  <li><a href="index.html" target="_blank">Home</a></li>
+		  <li><a href="https://linktr.ee/nyannyancosplay">Donate</a></li>
+      <li><a href="https://discord.gg/hjH2zFG" target="_blank">Discord</a></li>
+	  </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2> <font size="+4">Social media</font></h2>
+	  	<div class="middle">
+	  		<a href="https://www.instagram.com/nyannyancosplay/" target="_blank"><img src="content/icons/instagram.png" alt="" class="socialmedia"></a>
+				<a href=" https://twitter.com/nyannyancosplay" target="_blank"><img src="content/icons/twitter.png" alt="" class="socialmedia"></a>
+				<a href="https://www.youtube.com/channel/UCy1Pz1RglF84U-6ZQWQ_WEQ" target="_blank"><img src="content/icons/youtube.png" alt="" class="socialmedia"></a>
+				<a href="https://www.twitch.tv/nyannyancosplay" target="_blank"><img src="content/icons/twitch.png" alt="twitch" class="socialmedia"></a>
+        <a href="https://www.patreon.com/nyannyancosplay" target="_blank"><img src="content/icons/patreon.png" alt="twitch" class="socialmedia"></a>
+	  	</div>
+  </section>
+
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        The END
+      </span>
+    </div>
+  </div>
+</body>
 </html>
