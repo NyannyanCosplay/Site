@@ -15,28 +15,37 @@ body, html{
   color:#666;
   font-family: arial;
 }
-.pimg1, .pimg2, .pimg3, .pimg4{
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
   position:relative;
-  opacity:0.70;
+  opacity:0.7;
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
   background-attachment:fixed;
 }
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+    background-attachment:scroll;
+  }
+}
 .pimg1{
-  background-image:url('content/img1.jpg');
+  background-image:url('content/backgrounds/img1.jpg');
   min-height:100%;
 }
 .pimg2{
-  background-image:url('content/img2.png');
+  background-image:url('content/backgrounds/img2.png');
   min-height:400px;
 }
 .pimg3{
-  background-image:url('content/img3.jpg');
+  background-image:url('content/backgrounds/img3.jpg');
   min-height:400px;
 }
 .pimg4{
-  background-image:url('content/img4.png');
+  background-image:url('content/backgrounds/img4.png');
+  min-height:400px;
+}
+.pimg5{
+  background-image:url('content/backgrounds/img5.png');
   min-height:400px;
 }
 .section{
@@ -57,17 +66,6 @@ body, html{
   letter-spacing:8px;
   text-transform:uppercase;
 }
-
-.psubtext{
-  position:absolute;
-  top:65%;
-  width:100%;
-  text-align:center;
-  color: white;
-  font-size:20px;
-  letter-spacing:8px;
-  text-transform:uppercase;}
-
 .ptext .border{
   color:#fff;
   padding:20px;
@@ -77,27 +75,16 @@ body, html{
 .ptext .border.trans{
   background-color:transparent;
 }
-@media(max-width:568px){
-  .pimg1, .pimg2, .pimg3, .pimg4{
-    background-attachment:scroll;
-  }
-}
-img {
-  float: right;
-  margin-left: 20px;
-  margin-top: -30px;
-  box-shadow: 5px 5px 5px #23282d;
-}
-ul{
+.infobox{
 	float: right;
 	list-style-type: none;
 	margin-top: 40px;
 	margin-right: 30px;
 }
-ul li{
+.infobox li{
 	display: inline-block;
 }
-ul li a{
+.infobox li a{
 	text-decoration: none;
 	color: #fff;
 	padding: 20px;
@@ -106,52 +93,63 @@ ul li a{
 	text-transform: uppercase;
 	font-size: 14px;
 }
-ul li a:hover{
+.infobox li a:hover{
 	background-color: #fff;
 	color: #000;
 }
-
-body {
-  font-size: 62.5%;
-  font-style: Arial;
+.dramatext {
+  width: 1400px;
+  margin: auto;
 }
-
-.animation-box {
-  width: 75%;
-  height: 27.5rem;
-  background-color: blue;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
+.dramaimg {
+  float: right;
+  margin-left: 20px;
+  margin-top: -30px;
+  box-shadow: 5px 5px 5px #23282d;
+  width: 300px;
+  height: 500px;
 }
-
-.animation-container {
-  width: 1000rem;
-  height: 30rem;
+.socialmedia {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
-
-@keyframes topFadeOutVertical {
-  0% {
-    top: -3rem;
-    opacity: 0;
-	top: 55%;
-  }
-
-  75% {
-    top: 60%;
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 100;
-  }
+ul li {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 5px 10px 5px 10px;
+  font-size: 35px;
+  cursor: pointer;
 }
-
-.fadein {
-  top: 60%;
-  opacity: 100;
-  animation-name: topFadeOutVertical;
-  animation-delay: 0s;
-  animation-duration: 2s;
-  color: white;
+ul li:hover {
+  background-color: #fff;
+	color: #000;
+}
+.box {
+  display: none;
+  width: 1000px;
+  margin: auto;
+  height: 200px;
+}
+.active {
+  display: block;
+}
+.active2 {
+  background-color: #fff;
+	color: #000;
+}
+header {
+  text-align: left;
+  font-family: yaetfont;
+}
+p {
+  text-align: left;
+}
+.profilepic {
+  float: right;
+  border-radius: 100%;
+  margin-left: 40px;
+  border: 3px solid #fff;
+  width: 170px;
+  height: 170px;
 }
