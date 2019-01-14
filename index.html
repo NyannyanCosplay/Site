@@ -6,7 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NyanNyanCosplay</title>
   <link rel="stylesheet" href="theme.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+ $("li").on('click', function() {
+   $("li.active2").removeClass('active2');
+   $(this).addClass('active2');
+   var boxToShow = $(this).attr('rel');
+   $('.active').show(0, showNextPanel)
+   function showNextPanel() {
+     $(this).removeClass('active');
+     $("#"+boxToShow).hide(0, function() {
+       $(this).addClass('active');
+     });
+   };
+ });
+
+});
+</script>
 </head>
 <body>
   <div class="pimg1">
@@ -15,13 +32,12 @@
         NyanNyanCosplay
       </span>
     </div>
-    <ul>
-		  <li><a href="https://linktr.ee/nyannyancosplay">Donate</a></li>
+    <div class="infobox">
+		  <li><a href="https://linktr.ee/nyannyancosplay" target="_blank">Donate</a></li>
 		  <li><a href="#">Gallery</a></li>
-		  <li><a href="#">Discord</a></li>
-					
-	</ul>
-</div>
+      <li><a href="https://discord.gg/hjH2zFG" target="_blank">Discord</a></li>
+	  </div>
+  </div>
 
   <section class="section section-dark">
     <h2>Who is NyanNyanCosplay?!</h2>
@@ -102,6 +118,56 @@
     </div>
 	</section>
 
+  <div class="pimg5">
+    <div class="ptext">
+      <span class="border trans">
+        Image four Text
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h1> <font size="+5">Info on some of Kat's friends/admins of the discord servers</font> </h1>
+    <hr>
+    <ul>
+      <li rel="box1" class="active2">Suzuki</li>
+      <li rel="box2">Neo</li>
+      <li rel="box3">Fem</li>
+      <li rel="box4">Lord Brit</li>
+      <li rel="box5">Tsar William</li>
+      <li rel="box6">Septillion</li>
+    </ul>
+    <div class="box active" id=box1>
+      <header>Suzuki, the man who saved our community</header>
+      <p>
+
+      </p>
+    </div>
+    <div class="box" id=box2>
+      Neo
+    </div>
+    <div class="box" id=box3>
+      Fem
+    </div>
+    <div class="box" id=box4>
+      Lord Brit
+    </div>
+    <div class="box" id=box5>
+      <header>Tsar William, the laid back admin</header>
+      <img src="content/profilepics/tsar.jpg" alt="tsar" class="profilepic">
+      <p>
+        Tsar joined around 22 november when he joined the Official server. He became good friends with the admins since he is a
+        fun guy to talk to and doesn’t go too crazy when Kat joins chat. Since he was regularly talking with everyone,
+        the admins offered him to also become an admin. He refused a few times but he later accepted it and joined the admin team.
+        Tsar is one of the more laid back admins, he is usually there to talk with people and just socialize with them,
+        all around he is here to have a good time. He also has an amazing reading voice so watch out when he joins voice chat.
+      </p>
+    </div>
+    <div class="box" id=box6>
+      Septillion
+    </div>
+  </section>
+
   <div class="pimg4">
     <div class="ptext">
       <span class="border trans">
@@ -112,21 +178,14 @@
 
   <section class="section section-dark">
     <h2> <font size="+4">Social media</font></h2>
-	  		<div class="middle">
-	  			<a href="#" class="fa fa-twitter"></a>
-				<a href="#" class="fa fa-instagram"></a>
-				<a href="#" class="fa fa-reddit"></a>
-				<a href="#" class="fa fa-youtube"></a>
-				
-	  
-	  		</div>
-				
-    	
-	  	
-				
-	  					
-	   	  	
-      </section>
+	  	<div class="middle">
+	  		<a href="https://www.instagram.com/nyannyancosplay/" target="_blank"><img src="content/icons/instagram.png" alt="" class="socialmedia"></a>
+				<a href=" https://twitter.com/nyannyancosplay" target="_blank"><img src="content/icons/twitter.png" alt="" class="socialmedia"></a>
+				<a href="https://www.youtube.com/channel/UCy1Pz1RglF84U-6ZQWQ_WEQ" target="_blank"><img src="content/icons/youtube.png" alt="" class="socialmedia"></a>
+				<a href="https://www.twitch.tv/nyannyancosplay" target="_blank"><img src="content/icons/twitch.png" alt="twitch" class="socialmedia"></a>
+        <a href="https://www.patreon.com/nyannyancosplay" target="_blank"><img src="content/icons/patreon.png" alt="twitch" class="socialmedia"></a>
+	  	</div>
+  </section>
 
   <div class="pimg1">
     <div class="ptext">
