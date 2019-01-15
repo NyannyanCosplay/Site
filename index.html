@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,42 +9,53 @@
   <link rel="stylesheet" href="theme.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>
-$(document).ready(function(){
- $("li").on('click', function() {
-   $("li.active2").removeClass('active2');
-   $(this).addClass('active2');
-   var boxToShow = $(this).attr('rel');
-   $('.active').show(0, showNextPanel)
-   function showNextPanel() {
-     $(this).removeClass('active');
-     $("#"+boxToShow).hide(0, function() {
-       $(this).addClass('active');
-     });
-   };
- });
+    $(document).ready(function() {
+      $("li").on('click', function() {
+        $("li.active2").removeClass('active2');
+        $(this).addClass('active2');
+        var boxToShow = $(this).attr('rel');
+        $('.active').show(0, showNextPanel)
 
-});
-</script>
+        function showNextPanel() {
+          $(this).removeClass('active');
+          $("#" + boxToShow).hide(0, function() {
+            $(this).addClass('active');
+          });
+        };
+      });
+      $(".welcomebox").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".section").offset().top
+        }, 500);
+      });
+    });
+  </script>
 </head>
+
 <body>
   <div class="pimg1">
     <div class="ptext">
-      <span class="border">
-        NyanNyanCosplay
+      <span class="border welcomebox">
+        NyanNyanCosplay<img src="content/other/yellowheart.png" alt="yellowheart" class="yellowheart">
       </span>
     </div>
     <div class="infobox">
-		  <li><a href="gallery.html" target="_blank">Gallery</a></li>
-		  <li><a href="https://linktr.ee/nyannyancosplay">Donate</a></li>
+      <li><a href="https://linktr.ee/nyannyancosplay" target="_blank">Donate</a></li>
+      <li><a href="#">Gallery</a></li>
       <li><a href="https://discord.gg/hjH2zFG" target="_blank">Discord</a></li>
-	  </div>
+    </div>
   </div>
 
   <section class="section section-dark">
-    <h2>Who is NyanNyanCosplay?!</h2>
-    <p>
-      text test2
-    </p>
+    <h1>Who is NyanNyanCosplay?!</h1>
+    <div align="left" class="text">
+      <h3>
+        An autobiography on who nyannyancosplay really is
+      </h3>
+      <p>
+        text
+      </p>
+    </div>
   </section>
 
   <div class="pimg2">
@@ -55,10 +67,16 @@ $(document).ready(function(){
   </div>
 
   <section class="section section-dark">
-    <h2>how she got famous</h2>
-    <p>
-      text
-    </p>
+    <h1>How she got internet famous</h1>
+    <hr>
+    <div align="left" class="text">
+      <h3>
+        A summary on how she exactly got internet famous
+      </h3>
+      <p>
+        text
+      </p>
+    </div>
   </section>
 
   <div class="pimg3">
@@ -70,11 +88,14 @@ $(document).ready(function(){
   </div>
 
   <section class="section section-dark">
-    <h1> <font size="+5"> The history of the NyanNyanCosplay discord servers </font> </h1>
+    <h1>
+      The history of the NyanNyanCosplay discord servers
+    </h1>
     <hr>
     <img src="content/img12.png" alt="img" class="dramaimg">
-	    <div align="left" class="dramatext"><h3> A recap of everything that happened in the discord servers made around NyanNyanCosplay</h3>
-		   <p>
+    <div align="left" class="text">
+      <h3> A recap of everything that happened in the discord servers made around NyanNyanCosplay</h3>
+      <p>
         It all started with the Church of Nyannyan (now Almost Heaven). A discord server made by a few fans and the first community built around Kat.
         <br> Eventually it gained momentum as one of the admins posted an invite link in the description of a popular youtube video of Kat.
         <br> Later Kat's friend would join the server and talk to the people in the server.
@@ -116,7 +137,7 @@ $(document).ready(function(){
         her community <br> so she still sometimes join chat and talks with some of the members in there.
       </p>
     </div>
-	</section>
+  </section>
 
   <div class="pimg5">
     <div class="ptext">
@@ -127,7 +148,9 @@ $(document).ready(function(){
   </div>
 
   <section class="section section-dark">
-    <h1> <font size="+5">Info on some of Kat's friends/admins of the discord servers</font> </h1>
+    <h1>
+      Info on some of Kat's friends/admins of the discord servers
+    </h1>
     <hr>
     <ul>
       <li rel="box1" class="active2">Suzuki</li>
@@ -184,32 +207,29 @@ $(document).ready(function(){
       </p>
     </div>
   </section>
-
-  <div class="pimg4">
-    <div class="ptext">
-      <span class="border trans">
-        Image four Text
-      </span>
-    </div>
-  </div>
-
-  <section class="section section-dark">
-    <h2> <font size="+4">Social media</font></h2>
-	  	<div class="middle">
-	  		<a href="https://www.instagram.com/nyannyancosplay/" target="_blank"><img src="content/icons/instagram.png" alt="" class="socialmedia"></a>
-				<a href=" https://twitter.com/nyannyancosplay" target="_blank"><img src="content/icons/twitter.png" alt="" class="socialmedia"></a>
-				<a href="https://www.youtube.com/channel/UCy1Pz1RglF84U-6ZQWQ_WEQ" target="_blank"><img src="content/icons/youtube.png" alt="" class="socialmedia"></a>
-				<a href="https://www.twitch.tv/nyannyancosplay" target="_blank"><img src="content/icons/twitch.png" alt="twitch" class="socialmedia"></a>
-        <a href="https://www.patreon.com/nyannyancosplay" target="_blank"><img src="content/icons/patreon.png" alt="twitch" class="socialmedia"></a>
-	  	</div>
-  </section>
-
   <div class="pimg1">
     <div class="ptext">
+
       <span class="border">
         The END
       </span>
+      <div class="creditbox">
+        <div class="credit">
+          <div class="bottomtext">
+            © 2018. All Rights Reserved. NyanNyanCosplay is a not-for-profit
+            <br> cosplayer, of which all staff are volunteers.
+            <div class="middle">
+              <a href="https://www.instagram.com/nyannyancosplay/" target="_blank"><img src="content/icons/instagram.png" alt="" class="socialmedia"></a>
+              <a href=" https://twitter.com/nyannyancosplay" target="_blank"><img src="content/icons/twitter.png" alt="" class="socialmedia"></a>
+              <a href="https://www.youtube.com/channel/UCy1Pz1RglF84U-6ZQWQ_WEQ" target="_blank"><img src="content/icons/youtube.png" alt="" class="socialmedia"></a>
+              <a href="https://www.twitch.tv/nyannyancosplay" target="_blank"><img src="content/icons/twitch.png" alt="twitch" class="socialmedia"></a>
+              <a href="https://www.patreon.com/nyannyancosplay" target="_blank"><img src="content/icons/patreon.png" alt="twitch" class="socialmedia"></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
+
 </html>
